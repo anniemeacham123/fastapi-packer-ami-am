@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       docker_image:
-        description: 'Docker image to bake into AMI'
+        description: "Docker image to bake into AMI"
         required: true
-        default: 'annemeacham101/fastapi-cicd:latest'
+        default: "annemeacham101/fastapi-cicd:latest"
       environment:
-        description: 'Environment (dev, staging, prod)'
+        description: "Environment (dev, qa, prod)"
         required: false
-        default: 'dev'
+        default: "dev"
 
 permissions:
   id-token: write  # Required for OIDC
