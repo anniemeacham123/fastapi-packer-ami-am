@@ -13,7 +13,7 @@ packer {
 variable "aws_region" {
   description = "AWS region to build AMI"
   type        = string
-  default     = "us-east-1"
+  default     = "us-west-1b"
 }
 
 variable "docker_image" {
@@ -73,7 +73,7 @@ source "amazon-ebs" "fastapi" {
     ManagedBy = "Packer"
     Temporary = "true"
   }
-  subnet_id = "subnet-0ef0d83482d8a00ce"
+  subnet_id = "subnet-0bafaa25ba64bdfb5"
 }
 
 # Build configuration
