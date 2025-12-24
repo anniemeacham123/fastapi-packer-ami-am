@@ -52,7 +52,7 @@ source "amazon-ebs" "fastapi" {
   source_ami    = data.amazon-ami.amazon_linux_2023.id
   instance_type = "t2.micro"
   ssh_username  = "ec2-user"
-  
+  subnet_id = "subnet-0ef0d83482d8a00ce"
   # AMI configuration
   ami_name        = local.ami_name
   ami_description = "Golden AMI with Docker and FastAPI application"
